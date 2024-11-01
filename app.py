@@ -40,7 +40,7 @@ def obter_proxima_partida(entrada_usuario, horarios_partida, horarios_chegada):
     return response.choices[0].message.content.strip()
 
 def main():
-    st.title("Assistente de Horários de Autocarros")
+    st.title("Horários de Autocarros")
     horarios = carregar_horarios()
     linhas_disponiveis = [linha["numero_linha"] for linha in horarios["linhas"]]
     
